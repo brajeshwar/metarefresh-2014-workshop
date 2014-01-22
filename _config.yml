@@ -3,8 +3,8 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: metarefresh-2014-workshop
-description: Files, docs and references to tool & utilities for the MetaRefresh Workshop (2014).
+name: MetaRefresh (2014)
+description: "Files, docs and references to tool & utilities for the MetaRefresh Workshop (2014)."
 author:
   name: Brajeshwar Oinam
   email: brajeshwar@oinam.com

@@ -1,7 +1,7 @@
 {
   "name": "metarefresh-2014-workshop",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Yeoman workflow for metarefresh-2014-workshop",
   "dependencies": {},
   "devDependencies": {
