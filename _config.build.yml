@@ -5,3 +5,6 @@
 
 future: false
 show_drafts: false
+
+# Site specific Variables
+baseurl: "//brajeshwar.github.io/metarefresh-2014-workshop"

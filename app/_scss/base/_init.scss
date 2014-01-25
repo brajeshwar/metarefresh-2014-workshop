@@ -1,0 +1,38 @@
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Remove the glow on buttons and input fields on Safari and Chrome.
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+// Text Selection
+//
+// Has to be kept seperate set of rules to work.
+//
+::-moz-selection {
+  background-color: lighten($base-color, 30%);
+  color: $gray-dark;
+}
+
+::selection {
+  background-color: lighten($base-color, 30%);
+  color: $gray-dark;
+}
+
+/*
+ * Audio and Video Players flexible
+ */
+audio {
+  width: 100%;
+}
+
+video {
+  max-width: 100%;
+
+  /* just in case, to force correct aspet ratio */
+  height: auto !important;
+}

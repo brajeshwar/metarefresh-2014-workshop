@@ -241,7 +241,7 @@ module.exports = function (grunt) {
     },
     filerev: {
       options: {
-        length: 4
+        length: 13
       },
       dist: {
         files: [{
