@@ -1,0 +1,11 @@
+// some elements are visually good when right aligned on wider viewport
+.align-right-if-wide {
+  @media (min-width: 600px) {
+    text-align: right;
+  }
+}
+
+// spacing
+.space-margin-bottom {
+  margin-bottom: $line-height-computed;
+}
