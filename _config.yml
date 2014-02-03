@@ -30,4 +30,4 @@ markdown: maruku
 pygments: true
 
 # Site specific Variables
-baseurl: "http://0.0.0.0:9000"
+baseurl: "http://0.0.0.0:9000/"
