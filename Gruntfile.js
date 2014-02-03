@@ -36,6 +36,9 @@ module.exports = function (grunt) {
         ],
         tasks: ['jekyll:server']
       },
+      gruntfile: {
+        files: ['Gruntfile.js']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -112,8 +115,8 @@ module.exports = function (grunt) {
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',
         relativeAssets: false,
-        httpImagesPath: 'images',
-        httpGeneratedImagesPath: 'images/generated',
+        httpImagesPath: '../images',
+        httpGeneratedImagesPath: '../images/generated',
         outputStyle: 'expanded',
         raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
       },
