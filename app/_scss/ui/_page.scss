@@ -8,15 +8,15 @@
 
   @media (max-width: $screen-xs-max) {
     min-height: $height;
-    background-image: image-url("hero-sm.jpg");
+    background-image: url('#{$path-image}/hero-sm.jpg');
   }
   @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
     min-height: $height + $height*40/100;
-    background-image: image-url("hero-md.jpg");
+    background-image: url('#{$path-image}/hero-md.jpg');
   }
   @media (min-width: $screen-lg-min) {
     min-height: $height + $height*60/100;
-    background-image: image-url("hero-lg.jpg");
+    background-image: url('#{$path-image}/hero-lg.jpg');
   }
 }
 

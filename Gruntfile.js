@@ -115,10 +115,9 @@ module.exports = function (grunt) {
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',
         relativeAssets: false,
-        httpImagesPath: '../images',
-        httpGeneratedImagesPath: '../images/generated',
-        outputStyle: 'expanded',
-        raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
+        httpImagesPath: '/images',
+        httpGeneratedImagesPath: '/images/generated',
+        outputStyle: 'expanded'
       },
       dist: {
         options: {
@@ -249,10 +248,10 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           src: [
+            // '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            // '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}',
             '<%= yeoman.dist %>/scripts/**/*.js',
-            '<%= yeoman.dist %>/styles/**/*.css',
-            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
-            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+            '<%= yeoman.dist %>/styles/**/*.css'
           ]
         }]
       }
@@ -352,8 +351,8 @@ module.exports = function (grunt) {
     ]);
 
   grunt.registerTask('deploy', [
-    // 'check',
-    // 'test',
+    'check',
+    'test',
     'build',
     'buildcontrol'
     ]);
