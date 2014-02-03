@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{%if page.id == "home" %}{{ site.name }}{% else %}{{ page.title }} - {{ site.name }}{% endif %}</title>
 
@@ -15,37 +15,17 @@
 </head>
 <body {%if page.id %}id="{{ page.id }}"{% endif %}>
 
-<header id="header" class="">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-5 col-md-5">
-        <div class="brand">
-          <h1 class="site-title">MetaRefresh</h1>
-          <h2 class="site-desc">The Design Superheroes who uses Modern Design Workflows</h2>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-7 col-md-7">
-        <nav>
-          <ul>
-            <li>nav</li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-
 {{ content }}
 
 <footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="col-xs-12 col-sm-5 col-md-6">
         <p>
           <small>MetaRefresh 2014.</small>
         </p>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 align-right-if-wide">
+      <div class="col-xs-12 col-sm-7 col-md-6 align-right-if-wide">
         <p>
           <small><a href="//metarefresh.in/2014/workshops#952-the-design-superheroes-who-uses-modern-design-work">The Design Superheroes who uses Modern Design Workflows.</a></small>
         </p>
@@ -55,6 +35,8 @@
 </footer>
 
 <!-- build:js(app) {{ site.baseurl }}/scripts/scripts.js -->
+<script src="{{ site.baseurl }}/scripts/jquery-2.0.3.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/bootstrap.min.js"></script>
 <script src="{{ site.baseurl }}/scripts/main.js"></script>
 <!-- endbuild -->
 

@@ -1,0 +1,9 @@
+.site-title {
+  color: $brand-primary !important;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 90%;
+  }
+}
