@@ -124,7 +124,7 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          debugInfo: true,
+          debugInfo: false,
           generatedImagesDir: '.tmp/images/generated'
         }
       }
@@ -241,7 +241,7 @@ module.exports = function (grunt) {
     },
     filerev: {
       options: {
-        length: 4
+        length: 13
       },
       dist: {
         files: [{
@@ -349,8 +349,8 @@ module.exports = function (grunt) {
     ]);
 
   grunt.registerTask('deploy', [
-    'check',
-    'test',
+    // 'check',
+    // 'test',
     'build',
     'buildcontrol'
     ]);

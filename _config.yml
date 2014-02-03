@@ -28,3 +28,6 @@ markdown: maruku
 #   png_url:    /images/latex
 
 pygments: true
+
+# Site specific Variables
+baseurl: "http://0.0.0.0:9000"
