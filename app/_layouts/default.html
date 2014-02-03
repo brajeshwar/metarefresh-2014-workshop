@@ -7,9 +7,9 @@
 
 <title>{%if page.id == "home" %}{{ site.name }}{% else %}{{ page.title }} - {{ site.name }}{% endif %}</title>
 
-<!-- build:css({app,.tmp}) /styles/style.css -->
+<!-- build:css({app,.tmp}) {{ site.baseurl }}/styles/style.css -->
 <!-- Custom CSS -->
-<link rel="stylesheet" href="/styles/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/style.css">
 <!-- endbuild -->
 
 </head>
