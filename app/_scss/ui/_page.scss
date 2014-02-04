@@ -1,26 +1,43 @@
+// Splash Hero Image and Content
 .splash {
   $height: 300px;
 
   @include background-size(cover);
   @extend .jumbotron;
+  position: relative;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top right;
 
   @media (max-width: $screen-xs-max) {
     min-height: $height;
-    background-image: url('#{$path-image}/hero-sm.jpg');
+    background-image: url('#{$path-image}/hero/hero-batman-sm.jpg');
   }
   @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
     min-height: $height + $height*40/100;
-    background-image: url('#{$path-image}/hero-md.jpg');
+    background-image: url('#{$path-image}/hero/hero-batman-md.jpg');
   }
   @media (min-width: $screen-lg-min) {
-    min-height: $height + $height*60/100;
-    background-image: url('#{$path-image}/hero-lg.jpg');
+    min-height: $height + $height*50/100;
+    background-image: url('#{$path-image}/hero/hero-batman-lg.jpg');
   }
 }
 
 #masthead {
   color: $gray-lighter;
-  text-shadow: rgba(0, 0, 0, 0.3) 1px 2px 4px;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 2px 3px;
+}
+
+.splash-content {
+  @media (min-width: $screen-sm-min) {
+    margin-top: 4em;
+  }
+}
+
+// page elements
+.page-title {
+  border-left: 7px solid $brand-tertiary;
+  padding: 0.2em 0.5em;
+  text-transform: uppercase;
+  font-size: $font-size-h3;
+  background: lighten($brand-tertiary, 50%);
 }
