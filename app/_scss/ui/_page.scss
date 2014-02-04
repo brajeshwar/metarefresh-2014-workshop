@@ -41,3 +41,11 @@
   font-size: $font-size-h3;
   background: lighten($brand-tertiary, 50%);
 }
+
+.github-fork {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  border: 0;
+}
