@@ -14,11 +14,16 @@
 @import "config";
 @import "bootstrap";
 
+// base
+@import "base/fonts";
+
 // ui
 @import "ui/init";
+@import "ui/icon";
 @import "ui/header";
 @import "ui/footer";
 @import "ui/nav";
 @import "ui/page";
 
+// utilities at the last to over-write other styles
 @import "ui/utilities";

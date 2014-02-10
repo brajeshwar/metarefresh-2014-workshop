@@ -7,6 +7,26 @@ Files, docs and references to tool & utilities for the MetaRefresh Workshop (201
 * Venue: [TERI](http://www.teriin.org), 4th Main Rd, Domlur II Stage, Domlur, Bangalore ([Map](http://goo.gl/maps/E7Pfj))
 * Time/Date: 2:00pm, 12 Feb, 2014
 
+## How to Setup and use this
+
+Required: Ruby, NodeJS, Sass and Compass.
+
+Setup
+
+$ bundle install
+$ npm install
+
+Develop and View in your Browser
+$ grunt serve
+
+Build
+$ grunt build
+
+If you have access to the Github Repo, you can deploy
+$ grunt deploy
+
+Then, push the gh-pages to Github.
+
 #### License
 
 Everything on this repository is licensed under [MIT License](http://opensource.org/licenses/MIT). A copy of the LICENSE is included. Use it the way you want.
