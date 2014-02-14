@@ -1,6 +1,4 @@
-# MetaRefresh (2014)
-
-http://brajeshwar.github.io/metarefresh-2014-workshop/
+# MetaRefresh (2014): [The Design Superheroes who use Modern Design Workflows](http://brajeshwar.github.io/metarefresh-2014-workshop/)
 
 Files, docs and references to tool & utilities for the MetaRefresh Workshop (2014) - [The Design Superheroes who uses Modern Design Workflows](https://metarefresh.in/2014/workshops#952-the-design-superheroes-who-uses-modern-design-work).
 
@@ -9,20 +7,24 @@ Files, docs and references to tool & utilities for the MetaRefresh Workshop (201
 
 ## How to Setup and use this
 
-Required: Ruby, NodeJS, Sass and Compass.
+Install Ruby, NodeJS, Sass and Compass (required).
 
-Setup
+*Setup*
 
 $ bundle install
+
 $ npm install
 
-Develop and View in your Browser
+*Develop and View in your Browser*
+
 $ grunt serve
 
-Build
+*Build*
+
 $ grunt build
 
 If you have access to the Github Repo, you can deploy
+
 $ grunt deploy
 
 Then, push the gh-pages to Github.
