@@ -4,6 +4,7 @@
   text-transform: uppercase;
 
   @media (max-width: $screen-xs-max) {
-    font-size: 90%;
+    font-size: 80%;
+    font-weight: 400;
   }
 }
